@@ -1,5 +1,5 @@
 # FIXME: This doesn't seem to be used
-v6_set_switchbot_curtain_cover_position:
+v6_set_switchbot_curtain_position:
   description: Sets cover position with ability to set speed
   fields:
     entity_id:
