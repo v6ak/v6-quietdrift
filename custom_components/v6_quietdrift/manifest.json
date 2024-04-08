@@ -1,0 +1,12 @@
+{
+  "codeowners": ["@v6ak"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/v6ak/v6-quietdrift/",
+  "issues": "https://github.com/v6ak/v6-quietdrift/issues",
+  "domain": "v6_quietdrift",
+  "iot_class": "local_push",
+  "name": "QuietDrift by v6ak",
+  "requirements": [],
+  "version": "1.0.0"
+}
