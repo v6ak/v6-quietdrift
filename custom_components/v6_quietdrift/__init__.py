@@ -8,7 +8,7 @@ from homeassistant.core import HomeAssistant, ServiceCall
 from homeassistant.helpers import entity_registry
 from homeassistant.const import CONF_ENTITY_ID
 
-from .config import CONF_SPEED, CONF_POSITION, DOMAIN, SET_COVER_POSITION_SCHEMA
+from .const import CONF_SPEED, CONF_POSITION, DOMAIN, SET_COVER_POSITION_SCHEMA
 
 _LOGGER = logging.getLogger(__name__)
 
