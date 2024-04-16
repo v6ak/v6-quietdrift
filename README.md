@@ -1,5 +1,9 @@
 # QuietDrift by v6ak for Home Assistant
 
+Until QuietDrift is implemented directly in Home Assistant (which might take a while), you can use
+this custom component. It relies on implementation details a bit, but I think it is a reasonable
+temporary solution.
+
 ## Setup
 
 ### Config file
