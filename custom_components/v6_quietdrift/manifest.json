@@ -1,6 +1,6 @@
 {
   "codeowners": ["@v6ak"],
-  "config_flow": true,
+  "config_flow": false,
   "dependencies": [],
   "documentation": "https://github.com/v6ak/v6-quietdrift/",
   "issues": "https://github.com/v6ak/v6-quietdrift/issues",
