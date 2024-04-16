@@ -19,9 +19,12 @@ Not yet supported.
 Set position this way:
 
 ```
-service: cover.v6_set_switchbot_curtain_position
+service: v6_quietdrift.set_switchbot_curtain_position
 data:
   speed: 1
   position: 90
   entity_id: cover.curtain_3_f00b
 ```
+
+There is also an older service `cover.v6_set_switchbot_curtain_position`. It does the very same job,
+but the old service cannot be easily configured by GUI, only by YAML.

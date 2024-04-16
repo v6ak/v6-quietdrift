@@ -1,6 +1,5 @@
-# FIXME: This doesn't seem to be used
-v6_set_switchbot_curtain_position:
-  description: Sets cover position with ability to set speed
+set_switchbot_curtain_position:
+  description: Sets cover position with ability to set speed. This works only with SwitchBot devices with QuietDrift support.
   fields:
     entity_id:
       description: The cover to adjust

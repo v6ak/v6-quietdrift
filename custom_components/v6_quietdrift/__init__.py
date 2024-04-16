@@ -36,5 +36,11 @@ async def async_setup(hass: HomeAssistant, config: dict[str, Any]) -> bool:
         service_func=handle_set_cover_position,
         schema=SET_COVER_POSITION_SCHEMA,
     )
+    hass.services.async_register(
+        domain='v6_quietdrift',
+        service='set_switchbot_curtain_position',
+        service_func=handle_set_cover_position,
+        schema=SET_COVER_POSITION_SCHEMA,
+    )
 
     return True
