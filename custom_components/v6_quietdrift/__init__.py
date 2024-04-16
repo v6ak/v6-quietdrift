@@ -27,8 +27,8 @@ async def async_setup(hass: HomeAssistant, config: dict[str, Any]) -> bool:
         entities = list(map(lambda re: hass.data['cover'].get_entity(re.entity_id), registry_entities))
         
         for entity in entities:
-          res = await entity._device.set_position(position=position, speed=speed)
-          (_LOGGER.info if res else _LOGGER.warn)('set position (%s, %d, %d) result: %s', entity.entity_id, position, speed, res)
+            res = await entity._device.set_position(position=position, speed=speed)
+            (_LOGGER.info if res else _LOGGER.warn)('set position (%s, %d, %d) result: %s', entity.entity_id, position, speed, res)
 
     hass.services.async_register(
         domain=DOMAIN,
