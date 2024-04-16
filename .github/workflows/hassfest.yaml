@@ -3,7 +3,11 @@ name: Validate with hassfest
 on:
   push:
     branches:
-      - '!master'  # Not tuned enough to allow running in master.
+      # Not tuned enough to allow running in master.
+      - '*'         # matches every branch that doesn't contain a '/'
+      - '*/*'       # matches every branch containing a single '/'
+      - '**'        # matches every branch
+      - '!master'   # excludes master
   pull_request:
   schedule:
     - cron:  '0 0 * * *'
