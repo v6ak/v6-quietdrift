@@ -6,12 +6,14 @@ from typing import Any
 from homeassistant.core import HomeAssistant
 from homeassistant.core import HomeAssistant, ServiceCall
 from homeassistant.helpers import entity_registry
+import homeassistant.helpers.config_validation as cv
 from homeassistant.const import CONF_ENTITY_ID
 
 from .const import CONF_SPEED, CONF_POSITION, DOMAIN, SET_COVER_POSITION_SCHEMA
 
 _LOGGER = logging.getLogger(__name__)
 
+CONFIG_SCHEMA = cv.empty_config_schema(DOMAIN)
 
 async def async_setup(hass: HomeAssistant, config: dict[str, Any]) -> bool:
 
