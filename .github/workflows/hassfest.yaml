@@ -9,8 +9,9 @@ on:
       - '**'        # matches every branch
       - '!master'   # excludes master
   pull_request:
-  schedule:
-    - cron:  '0 0 * * *'
+  # Don't run it periodically, as it doesn't work well yet.
+  #schedule:
+  #  - cron:  '0 0 * * *'
 
 jobs:
   validate:
